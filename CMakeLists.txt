@@ -376,9 +376,11 @@ if (BUILD_FRAMEWORK)
 endif ()
 
 
-if (NOT DISABLE_FORCE_DEBUG_POSTFIX)
-  set(CMAKE_DEBUG_POSTFIX d)
-endif ()
+# if (NOT DISABLE_FORCE_DEBUG_POSTFIX)
+  # set(CMAKE_DEBUG_POSTFIX d)
+# else()
+  # set(CMAKE_DEBUG_POSTFIX "")
+# endif ()
 
 
 add_library(freetype
